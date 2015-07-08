@@ -1,0 +1,662 @@
+/* optimation */
+/* browser */
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* body */
+body {
+    overflow-x: hidden;
+    background-color: white;
+    min-width: 820px;
+    }
+/* frontpage links */
+div#siteTable {
+    margin-top: -7px;
+    }
+/* infobar */
+div.infobar {
+    border: 1px solid black;
+    border-radius: 1px;
+    color: black;
+    display: block;
+    max-width: 800px;
+    background-color: #689f8f;
+    padding: 5px 5px;
+    }
+/* link */
+a {
+    color: black;
+    transition: color .4s ease;
+    }
+a.subbarlink {
+    color: white;
+    transition: color .4s ease;
+    }
+a.choice {
+    color: white;
+    transition: color .4s ease;
+    }
+a.author {
+    color: black;
+    transition: color .4s ease;
+    }
+a:hover {
+    color: black;
+    transition: color .4s ease;
+    }
+div.md a {
+    color: black;
+    transition: color .4s ease;
+    }
+
+#siteTable div.thing a.title { color: black; transition: color .4s ease;}
+#siteTable div.thing a.title:hover { color: #077187; transition: color .4s ease;}
+
+/* NSFW */
+
+.nsfw-stamp {
+    color: #F00;
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 12px;
+    }
+
+/* header */
+#header {
+    background-color: #eee;
+    border-bottom: 0px;
+    }
+/*#header #header-bottom-left:before {
+    content: " ";
+    height: 6rem;
+    border: 1.5rem solid black;
+    border-top: none;
+    border-bottom: 0.75rem solid transparent;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    z-index: 5318008;
+    -moz-transform: scale(1.01);
+    }*/
+#header #header-img {
+    position: absolute;
+    background-image: none;
+    background-position: 0px 0px;
+    width: 90px;
+    height: 150px;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 5318009;
+    left: 0.5rem;
+}
+<!--
+#header #header-img:hover { margin-top: -33px }
+#header #header-img:active { margin-top: -32px }
+-->
+#header #header-bottom-left span.pagename.redditname {
+    margin-left: 45%;
+    margin-right: auto;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    color: #BBB;
+    }
+#header #header-bottom-left span.pagename.redditname a {
+    font-size: 0;
+    background-image: url(%%vegan%%);
+    background-size: 7rem auto;
+    background-repeat: no-repeat;
+    background-position: left 3px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    width: 7.5rem;
+    height: 6rem;
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 0.7rem;
+    background-clip: padding-box;
+    background-color: #eee;
+    margin-right: 0rem;
+    position: relative;
+    z-index: 2;
+    }
+#header #header-bottom-left span.pagename.redditname a { color: #99AD99 }
+#header #sr-header-area {
+    height: 1.5rem;
+    background-color: black;
+    color: white;
+    line-height: 1.5rem;
+    border: none;
+    padding: 0 0.3rem;
+    }
+#header #sr-header-area * { max-height: none }
+#header #sr-header-area .drop-choices.srdrop { z-index: 5318010 }
+#header #header-bottom-left ul.tabmenu {
+    background-color: transparent;
+    display: block!important;
+    margin: 0 0 0 5rem;
+    }
+#header #header-bottom-left ul.tabmenu li { margin: 0 }
+#header #header-bottom-left ul.tabmenu li a,
+#header #header-bottom-left ul.tabmenu li.selected a { /* nav bar */
+    background-color: transparent;
+    border: none;
+    padding: 0.75rem 0.75rem;
+    line-height: 1rem;
+    display: inline-block;
+    color: #999999;
+    }
+#header #header-bottom-left ul.tabmenu li.selected a {
+    border-bottom: black;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: inset 0 -0.2rem 0 black;
+    color: black;
+    }
+#header #header-bottom-left ul.tabmenu li a:hover {
+    color: black;
+    text-decoration: none;
+    }
+#header #header-bottom-right {
+    bottom: 0;
+    top: auto;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    line-height: 2.5rem;
+    background-color: transparent;
+    }
+@media screen and (max-width:1024px) { 
+    #header #header-bottom-right { bottom: 3.25rem }
+    }
+#header #header-bottom-left:after {
+    content: " ";
+    background-color: #eee;
+    z-index: -5318008;
+    position: absolute;
+    top: 5.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+
+
+/* side */
+.side {
+    background-color: transparent;
+    margin-top: 100px;
+    }
+.subButtons {border-radius: 1px;}
+.leavemoderator, .leavecontributor-button, .sidebox, .spacer, .icon-menu a {
+    background-color: transparent !important;
+    background: #eee none no-repeat scroll left center !important;
+    }
+/* search */
+#search {
+    border: 1px black;
+    margin-top: -33px; /* add specific margin if subscriber + RES buttons are implemented correctly */
+    }
+#searchexpando {
+    background-color: #689f8f;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-top: 2px;
+    }
+#moresearchinfo {
+    border: 0px solid #689f8f;
+    }
+/* linkinfo */
+.linkinfo {
+    background-color: #689f8f;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-top: -10px;
+    }
+
+/* hide subreddit creator */
+.titlebox .bottom {
+    font-size: 0px;
+    color: #FFF;
+}
+.titlebox .bottom:before {
+    font-size: 10px;
+    color: gray;
+    content: " ";
+}
+.titlebox .bottom .age {
+    font-size: 10px;
+    color: gray;
+} 
+
+/* submit */
+.sidebox.submit { 
+    position: absolute; 
+    width: 149px; 
+    top: 210px; /*Change this to position it*/
+    }
+.sidebox.submit.submit-link { right: auto; }
+.sidebox.submit.submit-text { left: auto; right: 0; padding-right: 5px; }
+.side .submit-text { right: 10px;}
+
+.submit .morelink { 
+    width: 149px;
+    height: 45px; 
+    border: 1px !important;
+    background: black; /*Change to whatever color you like*/
+    transition: color .4s ease;
+    }
+
+.morelink a {
+    display: block;
+    text-align: left; 
+    padding: 3px;
+    color: #FFF;
+    font-weight: normal;
+    padding-right: 49px !important;
+    width: 97px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 1px;
+    text-transform: capitalize;
+    }
+.submit .morelink:hover{  background:#45717a; transition: color .4s ease;}
+
+/* Kills the community button/nub/spacer */
+  .sidebox.create .morelink {display: none;}
+  .sidebox.submit .spacer a, .sidebox.create .spacer a {display: none; }
+  .morelink .nub, .morelink .nub:hover { display: none }
+
+ /* Message the moderators button */
+ .helplink[href="/message/compose?to=%2Fr%2FVeganCSS"] { 
+/*Change "Subreddit" to the name of your subreddit, this is case sensitive*/
+    display: block;
+    font-weight: normal;
+    letter-spacing: 0;
+    background: black; ; /*You can change its color here*/
+    transition: color .4s ease;
+    border-color: #0f0000;
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+    -o-border-radius: 0px!important;
+    -ms-border-radius: 0px!important;
+    -khtml-border-radius: 0px!important;
+    border-radius: 0px !important;
+    color: #fff;
+    font-size: 11px;
+    width: 300px;
+    line-height: 25px;
+    text-align: center;
+    position:absolute;
+    top: 253px; /*Change this number to reposition/move*/
+    right: 5px;
+    z-index: 3;
+    text-decoration: none !important;
+    }
+
+.helplink[href="/message//compose?to=%2Fr%2FVeganCSS"]:hover{
+/*Remeber to change "Subreddit" to your subreddit's name*/
+    background-color: #eee;
+    border-color: #7BB850;
+    }
+
+.helplink[href="/message/c/compose?to=%2Fr%2FVeganCSS"]:after{
+    content:'';
+    display: block;
+    position:absolute;
+    height:0;
+    width:0;
+    border-left: 0px solid #005DAC;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    top: 0px;
+    right: -0px;
+    z-index: 5;
+    }
+
+.helplink:hover{  background:#45717a; transition: color .4s ease;}
+
+/* side subtitle */
+div.side h1.hover.redditname { display: none }
+/* subscribtion */
+div.side span.subscribe-button{
+    display: inline-block;
+    margin: 0;
+    width: 33.33%
+    }
+div.side span.subscribe-button a.option.active{
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    background-image: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 1rem;
+    }
+
+div.side span.RESshortcut.RESshortcutside {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 33.3%;
+    background-image: none;
+    background-color: grey;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 1rem;
+    }
+
+div.side span.REStoggle.RESDashboardToggle {
+    border: none;
+    border-radius: 0;
+    width: 33.3%;
+    background-image: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 1rem;
+    }
+div.side span.subscribe-button a.option.remove, .RESshortcutside.remove, .RESDashboardToggle.remove { background-color: black!important}/* displayed while subbed */
+div.side span.subscribe-button a.option.add, .RESshortcutside, .RESDashboardToggle { background-color: grey}/* displayed while not subbed */
+/* ##############################################################################################################################################################SERIOUSLY RES IS A PAIN IN THE ASS
+.RESshortcutside {border: none;
+    border-radius: 0;
+    width:5.935rem;
+    background-image: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 1rem;
+    margin-left: 100px;
+    margin-top: -32px;
+    }
+ .RESDashboardToggle {
+    position: relative; 
+    margin-top: -32px;
+    }*/
+
+.subscribe-button .option.active,
+.subButtons .RESshortcutside,
+.subButtons .RESDashboardToggle {
+    border: none;
+    border: 0;
+    border-radius: 0;
+    background-image: none;
+    display: block;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.subscribe-button.toggle  {
+    margin-right: 0;
+}
+.subscribe-button .option.active {
+    height: 20px;
+    width: 80px;
+}
+.subButtons .RESshortcutside {
+    background: grey;
+    height: 20px;
+    width: 80px;
+}
+.subButtons .RESDashboardToggle {
+    background: grey;
+    height: 20px;
+    width: 80px;
+}
+.subscribe-button .add {
+    background: grey;
+}
+.subscribe-button .remove {
+    background: black;
+}
+.subButtons .RESshortcutside.remove {
+    background: black;
+}
+.subButtons .RESDashboardToggle.remove {
+    background: black;
+}/*
+#############################################################################################################################################################################ENOUGH FOR TODAY*/
+
+
+/* subscriber */
+div.side span.subscribers {
+    color: black;
+    background-color: transparent;
+    width: 40%;
+    padding: 0.5rem 0;
+    text-align: center;
+    }
+/* users online */
+div.side p.users-online {
+    color: black;
+    background-color: transparent;
+    display: inline-block;
+    width: 60%;
+    padding: 0.5rem 0;
+    text-align: left;
+    margin: 0;
+    }
+/* div.side p.users-online:before { display:none;} hides ugly "users online button", replacing image needed first. */
+
+
+/* text post */
+div.expando form.usertext div.md{
+    border: 1px solid black;
+    border-radius: 1px;
+    }
+/* inner comment */
+div.md {
+    border: none;
+    }
+/* moderator comment order box */
+div.rounded.gold-accent.comment-visits-box {
+    border: 1px solid black;
+    border-radius: 1px;
+    color: white;
+    display: block;
+    max-width: 800px;
+    background-color: #689f8f;
+    padding: 5px 5px;
+}
+
+
+
+/* filter */
+
+html:lang(xx) .link:not(.linkflair-ethics) {
+    display: none    }
+
+html:lang(ev) .link:not(.linkflair-environment) {
+    display: none    }
+
+html:lang(yy) .link:not(.linkflair-health) {
+    display: none    }
+
+html:lang(zz) .link:not(.linkflair-other) {
+    display: none    }
+
+
+
+
+/* filter button */
+
+.side a[href*='#xx'] { 
+    display: inline-block;
+    position: relative;
+    margin-top:0px;
+    border: 1px solid transparent;
+    font-size: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: normal;
+    background: #999999;
+    }
+
+.side a[href*='#ev'] { 
+    display: inline-block;
+    position: relative;
+    margin-top:0px;
+    border: 1px solid transparent;
+    font-size: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: normal;
+    background: #808080;
+    top:0px;
+    left:5px;}
+
+.side a[href*='#yy'] { 
+    display: inline-block;
+    position: relative;
+    margin-top:0px;
+    border: 1px solid transparent;
+    font-size: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: normal;
+    background: #666666;
+    top: 0px;
+    left: 10px;}
+
+.side a[href*='#zz'] { 
+    display: inline-block;
+    position: relative;
+    margin-top:0px;
+    border: 1px solid transparent;
+    font-size: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: normal;
+    background: #4C4C4C;
+    top: 0px;
+    left: 15px;}
+
+/* link flairs */
+
+.linkflair-ethics .linkflairlabel {
+    background-color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+    color:#F5F5F5;
+    border-color: #000000;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px;}
+
+.linkflair-environment .linkflairlabel {
+    background-color: #808080;
+    font-size: 12px;
+    font-weight: normal;
+    color:#F5F5F5;
+    border-color: #000000;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px;}
+
+.linkflair-health .linkflairlabel {
+    background-color: #666666;
+    font-size: 12px;
+    font-weight: normal;
+    color:#F5F5F5;
+    border-color: #000000;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px;}
+
+.linkflair-other .linkflairlabel {
+    background-color: #4C4C4C;
+    font-size: 12px;
+    font-weight: normal;
+    color:#F5F5F5;
+    border-color: #000000;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px;}
+
+
+
+
+
+
+
+/* RES for the lazy */
+
+#header #sr-header-area #RESShortcutsEditContainer * {
+    font-size: 0.8rem;
+    color: #888888;
+    }
+.res-nightmode #header #header-bottom-left:after { background-color: #444444 }
+.res-nightmode #header #sr-header-area { background-color: #444444 }
+body.res-nightmode #header { background-color: #333333 }
+#header #sr-header-area #RESShortcutsEditContainer {
+    height: 1.5rem;
+    background-color: transparent;
+    }
+#header #sr-header-area #RESShortcutsEditContainer * {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background-color: transparent;
+    }
+body.res-nightmode #header #sr-header-area a { color: #888888 }
+#header #header-bottom-right #userbarToggle {
+    background-color: transparent;
+    line-height: 2.5rem;
+    border: none;
+    color: #AAAAAA;
+    }
+#header #header-bottom-right .separator { display: none }
+#header #header-bottom-right .separator+* { margin-left: 0.5rem }
+div#RESMainGearOverlay div.gearIcon {
+    position: static;
+    margin-top: 0.55rem;
+    margin-left: 5px;
+    }
+
+.flairtoggle {
+    background-color: #eee !important;
+}
+
+
+
+/* NP. LINK IMPLEMENTATION */
+
+.id-t3_1laa34 { background-color: #EBF7DE }
+.id-t2_4q00i::first-letter { color: red }
+body:lang(np):not(.subscriber) .arrow { visibility: hidden!important }
+body:lang(np):not(.subscriber) .usertext-edit,
+body:lang(np):not(.subscriber) .sidebox.submit,
+body:lang(np):not(.subscriber) .commentingAs,
+body:lang(np):not(.subscriber) .markdownEditor,
+body:lang(np):not(.subscriber) .report-button,
+body:lang(np):not(.subscriber) a[onclick*="return reply(this)"],
+body:lang(np):not(.subscriber) .subButtons,
+body:lang(np):not(.subscriber) .helplink,
+body:lang(np):not(.subscriber) .titlebox .fancy-toggle-button.toggle>.option.add { display: none!important }
+body:lang(np):not(.subscriber) #siteTable:before {
+    content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
+    display: block;
+    max-width: 800px;
+    background-color: #689f8f;
+    padding: 5px 10px;
+    margin: 5px 305px 5px 0px;
+    border: 1px solid black;
+    font-size: small;
+}
+body:lang(np):not(.subscriber) .entry.likes:not(.reddit-entry):before,
+body:lang(np):not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
+    content: "Please do not vote or comment when you come from external subreddits.";
+    color: red;
+    font-size: small;
+    font-weight: normal;
+}
+body.wiki-page:lang(np):not(.subscriber) span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform label[for="reason"],
+body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform input#wiki_revision_reason,
+body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform input[type="submit"] {display:none!important}
